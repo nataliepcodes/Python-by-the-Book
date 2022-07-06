@@ -34,4 +34,26 @@ jobs_part_four = '"\n'
 
 print(f"{jobs_part_one}{jobs_part_two}{jobs_part_three}{jobs_part_four}")
 
+# quotes formated with using an escape character \"
+quote_one = "Nelson Mandela said, \"It always seems impossible until it's done\""
+print(quote_one)
+
 print("*********************************************************************************")
+
+# 2-6 famous person: repeat 2-5 but this time represent famous person's name using a variable called famous_person
+famous_person = "Nelson Mandela"
+message = f"{famous_person} said, \"It always seems impossible until it's done\""
+print(message)
+
+print("*********************************************************************************")
+
+# 2-7 stripping names: use variable to represent the person's name, and include some whitespace characters at the beginning and end of the name
+# use each character combinatio \t and \n at least once
+# print the name once so the whitespace around the name is displayed
+# then print the name using each of the three stripping functions - rstrip(), lstrip(), strip()
+
+name = "\tMarie Curie\n"
+print(name)
+print(name.lstrip())
+print(name.rstrip())
+print(name.strip())
