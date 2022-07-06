@@ -10,7 +10,7 @@ multiplication = 4 * 2
 print(multiplication) # 8
 
 division = 16 / 2
-print(division) # 8.0 - when you divide to integers you get a float
+print(division) # 8.0 - when you divide two integers you get a float
 
 # 2-9 favourite number: use a variable to represent your favourite number
 # then using that variable create a message that reveals your favourite number
