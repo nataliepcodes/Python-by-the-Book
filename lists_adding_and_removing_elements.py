@@ -107,3 +107,7 @@ removed_guest = guest_list.pop()
 print(guest_list)
 print(f"Dear {removed_guest}, unfortunately I cannot invite you for dinner anymore!\n")
 
+# use del to delete the last two guests from the list
+del guest_list[0]
+del guest_list[0]
+print(guest_list)
