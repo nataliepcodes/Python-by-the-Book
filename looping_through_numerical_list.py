@@ -74,6 +74,22 @@ for value in range(1, 20, 2):
 
 print("\n-----> Exercise 4-7 <-----\n")
 # threes: make a list of multiples of 3 from 3 to 30
-
+multiples = []
 for value in range(1, 11):
-    print(value * 3)
+    temp = value * 3
+    multiples.append(temp)
+print(multiples)
+
+print("\n-----> Exercise 4-8 <-----\n")
+# cube: a number raised to the third power
+# make a list of the first 10 cubes (int from 1 through 10), use for loop to print
+cubes = []
+for value in range (1, 11):
+    temp = value ** 3
+    cubes.append(temp)
+print(cubes)
+
+print("\n-----> Exercise 4-9 <-----\n")
+# cube comprehension: use list comprehension to generate a list of 10 cubes
+cubes = [value ** 3 for value in range(1, 11)]
+print(cubes)
