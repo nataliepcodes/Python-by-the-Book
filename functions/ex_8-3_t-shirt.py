@@ -5,3 +5,4 @@
 def make_tshirt(size, message):
     print(f'The t-shirt size is {size.title()}, the printed message is "{message}".')
 make_tshirt("S", "I can and I will!")
+make_tshirt(size="M", message="Coding is the coolest hobby in the world!")
