@@ -46,3 +46,20 @@ def greet_user(user_names):
 
 users = ["harry", "anne", "john"]
 greet_user(users)
+
+# passing an arbitrary number of arguments
+# arbitrary meaning: based on random choice or personal whim, rather than any reason or system
+# def make_pizza(*toppings):
+# an asterisk in the parameter name tells Python to make an empty tuple and add values that it receives, add to tuple
+# unlimited nbr of arguments can be received
+# generic parameter name is *args
+
+
+# mixing positional and arbitrary arguments
+# parameter accepting arbitrary number of args must be last in the function defition
+# python matches position and keyword args first, then any other args
+
+# arbitrary keyword arguments
+# def build_profile(first, last, **user_info)
+# ** tells python to create an empty dictionary called user_info & add there wahever value pairs it receives
+# generic parameter name for non-specific keyword arguments is **kwargs
