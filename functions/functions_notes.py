@@ -37,3 +37,12 @@ display_info(name = "mark", age = 39)
 
 # a default value can be defined for each parameter; if argument for parameter is given in the function call,
 # Python uses that, if not a parameter's default value is used. The arg can be excluded from the function call
+
+# greet user
+def greet_user(user_names):
+    for name in user_names:
+        message = f"\nHello, {name.title()}."
+        print(message)
+
+users = ["harry", "anne", "john"]
+greet_user(users)
