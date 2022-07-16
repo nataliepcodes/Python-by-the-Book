@@ -63,3 +63,32 @@ greet_user(users)
 # def build_profile(first, last, **user_info)
 # ** tells python to create an empty dictionary called user_info & add there wahever value pairs it receives
 # generic parameter name for non-specific keyword arguments is **kwargs
+
+############################################################################
+# storing functions in modules
+# to import function, first create a module: .py file containing a code to b eimported into the program e.g. pizza.py
+# the module includes only the function(s)
+# the program e.g. making_pizza.py need to be in the same directory as pizza.py
+# pizza.py is then imported to making_pizza.py by 'import pizza'
+# the line 'import pizza' at the top of the program opens the pizza.py file and copies all the functions into the progra
+# to call a function use: pizza.making_pizza('cheese', 'olives') / module_name.function_name()
+
+# sometimes only specific functions are necessary to be imported
+# to import add a line at the top of the program:
+# 'from module_name import function_name()' /e.g. from pizza import make_pizza()
+# multiple import functions need to be separated by comma:
+# 'from module_name import function_0, function_1, function_2'
+# to call: use oly a function name without a dot notation -> function_0(arg_1, arg_2) / make_pizza('pepperoni', 'other')
+
+# using 'as' to give a FUNCTION an alias if the function name conflicts wih an existing name in the program
+# from 'module' import 'function' as 'rename function'
+# e.g. from pizza import make_pizza as mp
+# to call: use oly a function name without a dot notation -> renamed_func(arg_1, arg_2) / mp('pepperoni', 'other')
+
+# using 'as' to give a MODULE an alias, this allows to call module function quicker
+# e.g. import module_name as mn
+# mn.function_name(arg_1, arg_2, arg_3)
+
+# importing all functions in a module using * (asterisk operator)
+# from module_name import *
+# function_name(arg_1, arg_2)
