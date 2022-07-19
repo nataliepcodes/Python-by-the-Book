@@ -1,0 +1,5 @@
+In Python you can store data in lists, tuples and dictionaries.
+In Python a module is a file that contains the code.
+In Python the Boolean values are written as True or False.
+In Python you can use inheritance to base one class on another class and use its data.
+In Python you can use classes to represent real-world data.
