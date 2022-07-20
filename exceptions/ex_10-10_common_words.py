@@ -5,18 +5,19 @@
 # then try counting 'the' with a space in the string and see how much lower your count is
 
 # open the file, use UTF, it is used when your system's default encouding does not match the file's encoding
-with open('the_untamed_by_george_pattullo.txt', encoding='utf-8') as f:
-    try:
+filename = 'the_untamed_by_george_pattullo.txt'
+try:
+    with open(filename, encoding='utf-8') as f:
         content = f.read()
-    except FileNotFoundError:
-        print("Sorry, the file cannot be opened.")
-    else:
-        words_v1 = content.lower().count('the')
-        print(f"The approximate 'the' word count in The Untamed by George Pattulo is {words_v1}.")
-
-        words_v2 = content.lower().count('the ')
-        print(f"The approximate 'the ' word count with a space in 'the' in The Untamed by George Pattulo is {words_v2}.")
-        
-        difference = words_v1 - words_v2
-        print(f"The difference between the word count of 'the' without a space and 'the ' with the space is: {difference} words.")
+except FileNotFoundError:
+        print(f"Sorry, the file {filename} cannot be opened.")
+else:
+    words_v1 = content.lower().count('the')
+    print(f"The approximate 'the' word count in The Untamed by George Pattulo is {words_v1}.")
+    
+    words_v2 = content.lower().count('the ')
+    print(f"The approximate 'the ' word count with a space in 'the' in The Untamed by George Pattulo is {words_v2}.")
+    
+    difference = words_v1 - words_v2
+    print(f"The difference between the word count of 'the' without a space and 'the ' with the space is: {difference} words.")
     
